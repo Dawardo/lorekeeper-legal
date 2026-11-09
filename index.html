@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lore Keeper Terms</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: one narrow reading column; a two-link contents row, then Terms, then Privacy. */
+:root {
+  --bg: #fbfaf8;
+  --fg: #23262b;
+  --muted: #5d636c;
+  --rule: #dcd9d2;
+  --accent: #2f5d8a;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Public Sans", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #16181c; --fg: #e4e6ea; --muted: #9aa1ab; --rule: #2e3238; --accent: #8db8e6; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #16181c; --fg: #e4e6ea; --muted: #9aa1ab; --rule: #2e3238; --accent: #8db8e6; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--body); padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 64px; }
+main { max-width: 42rem; margin: 0 auto; min-width: 0; }
+h1, h2 { font-family: var(--display); font-weight: 600; line-height: 1.2; text-wrap: balance; }
+h1 { font-size: 2.1rem; margin: 0 0 4px; }
+h2 { font-size: 1.6rem; margin: 0 0 8px; padding-top: 40px; border-top: 1px solid var(--rule); }
+h3 { font-size: 1rem; margin: 24px 0 4px; }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 1.2rem; margin: 0 0 10px; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 20px; }
+nav { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; }
+section { scroll-margin-top: 16px; }
+</style>
+
+</head>
+<body>
+<main>
+  <h1>Lore Keeper</h1>
+  <p class="meta">Terms of Service and Privacy Policy · Last updated November 9, 2026</p>
+  <nav><a href="#terms">Terms of Service</a><a href="#privacy">Privacy Policy</a></nav>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <p>Lore Keeper is a Discord bot that saves a copy of a roleplay server's lore channels so members can search them and server managers can export them. By adding the bot to a server or using its commands, you agree to these terms.</p>
+
+    <h3>What the bot does</h3>
+    <p>A member with the Manage Server permission picks the channels, forums, categories or threads to archive. The bot reads those places, keeps them up to date as people post, edit and delete, and answers the <code>/lore</code> and <code>/loreadmin</code> commands.</p>
+
+    <h3>Who may use it</h3>
+    <ul>
+      <li>You must follow the <a href="https://discord.com/terms">Discord Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a>.</li>
+      <li>Only people with Manage Server should add the bot or choose what it archives. Do that only in servers you are allowed to manage.</li>
+      <li>Do not use the bot to harass anyone, to collect other people's information for purposes unrelated to the server, or to attempt to break or overload it.</li>
+    </ul>
+
+    <h3>Your content</h3>
+    <p>Everything the bot saves was written by your server's members, and it stays theirs. The bot only keeps a copy for the server's use. Server managers are responsible for telling their members that the chosen channels are archived.</p>
+
+    <h3>Availability</h3>
+    <p>The bot is run by an individual on a best-effort basis. It may be offline, change, or be shut down at any time without notice, and features may be added or removed. Export your archive if you want to keep a copy.</p>
+
+    <h3>No warranty</h3>
+    <p>The bot is provided "as is", without promises that it is error-free, that every message will be captured, or that saved data will never be lost. To the fullest extent the law allows, the operator is not liable for lost data or other damages from using it.</p>
+
+    <h3>Removal and changes</h3>
+    <p>The operator may remove the bot from any server that breaks these terms. You can remove it at any time by kicking it. These terms may be updated, and the date above shows the latest version. Continuing to use the bot means you accept the changes.</p>
+
+    <h3>Contact</h3>
+    <p>Questions or requests: contact the bot's operator through the Discord server where it is installed, or message the bot's owner on Discord.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+
+    <h3>What is saved</h3>
+    <p>Only from the places a server manager chose to archive:</p>
+    <ul>
+      <li>The text of messages, including embeds, forwarded messages, and the names of attached files.</li>
+      <li>The author's Discord user ID and display name (for proxied characters, the character's name), plus when the message was posted and edited.</li>
+      <li>Images and files attached to those messages, unless the operator has turned file saving off.</li>
+      <li>The names of the channels, threads, categories and forum tags involved.</li>
+    </ul>
+    <p>The bot does not read direct messages, does not save voice or video, and ignores channels that were not chosen.</p>
+
+    <h3>How it is used</h3>
+    <p>The saved data is used only to run the bot: search results, statistics and exports for that server. Search results only show messages from channels the person searching can open on Discord. The data is not sold, shared with advertisers, or used to train AI models.</p>
+
+    <h3>Where it is stored</h3>
+    <p>Data is stored in a database and in files on the computer or server where the operator runs the bot. It is not sent to any other service. Exports are written to the same machine, and a server manager can receive the combined export file in Discord.</p>
+
+    <h3>How long it is kept</h3>
+    <ul>
+      <li>Messages deleted on Discord are removed from the archive, including their saved files.</li>
+      <li>When a server manager stops archiving a place with <code>/loreadmin untrack</code>, everything saved from it is deleted.</li>
+      <li>Removing the bot from a server does not delete its archive by itself. Ask the operator to delete it.</li>
+    </ul>
+
+    <h3>Your choices</h3>
+    <p>If you want your messages removed, delete them on Discord or ask a server manager or the operator to remove them from the archive. Contact the operator as described above to ask what is stored about you or to have it deleted.</p>
+
+    <h3>Children</h3>
+    <p>Discord requires users to be at least 13 (or the minimum age in their country). The bot is not meant for anyone younger.</p>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, the date at the top of this page will change.</p>
+  </section>
+</main>
+</body>
+</html>
